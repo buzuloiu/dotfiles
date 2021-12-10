@@ -1,0 +1,51 @@
+{
+    "workbench.activityBar.visible": false,
+    "workbench.colorTheme": "Solarized Dark+",
+    "editor.minimap.enabled": false,
+    "zentabs.maximumOpenedTabs": 5,
+    "zentabs.applyLimitFor": "editorGroup",
+    "zentabs.switchWithCurrentTab": true,
+    "editor.tabSize": 8,
+    "diffEditor.renderSideBySide": false,
+    "workbench.editor.limit.perEditorGroup": true,
+    "workbench.editor.limit.value": 5,
+    "workbench.editor.limit.enabled": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.fontFamily": "'Comic Shanns', Menlo, Monaco, 'Courier New', monospace",
+    "terminal.integrated.shell.linux": "/bin/zsh",
+    "editor.rulers": [
+    
+    120],
+    "[ruby]": {
+        "editor.rulers": [120]
+    },
+    "[git-commit]": {
+
+        "editor.rulers": [
+            50,
+            72
+        ],
+        "workbench.editor.restoreViewState": false
+    },
+    "mssql.connections": [
+        {
+            "server": "{{put-server-name-here}}",
+            "database": "{{put-database-name-here}}",
+            "user": "{{put-username-here}}",
+            "password": "{{put-password-here}}"
+        }
+    ],
+    "extensions.autoUpdate": "onlyEnabledExtensions",
+    "editor.cursorStyle": "line",
+    "editor.insertSpaces": false,
+    "editor.lineNumbers": "on",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "editor.wordWrap": "off",
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "window.zoomLevel": 1,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+}
