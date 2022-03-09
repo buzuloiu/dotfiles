@@ -75,6 +75,7 @@ plugins=(
   zsh-syntax-highlighting
   zsh-completions
   zsh-github-folders
+  autoupdate
 )
 
 source $ZSH/oh-my-zsh.sh
