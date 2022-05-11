@@ -9,13 +9,22 @@ ln -sf ~/dotfiles/.vimrc ~/.vimrc
 
 source ~/.zshrc
 
+# install packages
+if ! command -v rg &> /dev/null; then
+  sudo apt-get install -y ripgrep
+fi
+
+if ! command -v fzf &> /dev/null; then
+  sudo apt-get install -y fzf
+fi
+
 # install oh my zsh plugins
-git clone https://github.com/MichaelAquilina/zsh-you-should-use.git $ZSH_CUSTOM/plugins/you-should-use
+git clone https://github.com/MichaelAquilina/zsh-you-should-use.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/you-should-use
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/buzuloiu/zsh-github-folders ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-github-folders
-git clone https://github.com/TamCore/autoupdate-oh-my-zsh-plugins $ZSH_CUSTOM/plugins/autoupdate
+git clone https://github.com/TamCore/autoupdate-oh-my-zsh-plugins ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/autoupdate
 
 
 
